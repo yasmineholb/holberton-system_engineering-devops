@@ -1,0 +1,1 @@
+this repo contains projects that are mainly about shell basics.
