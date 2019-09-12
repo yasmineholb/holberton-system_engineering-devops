@@ -1,17 +1,17 @@
- jhv khsdc lkjsfv lkjhv lhv
- lkjv lkjhv lld lkjsv
- hv lkjhv lkjhv jhsv lkjhvddddddddddddddddd
- ddddljkhv lfffjkhsd kjsgggdv jrrrhsv tttjkv kjsd lkjhsdv
- kjsdv jhs lkjshv lkjhsvffdddddddddddddddd
- jkhsvd ilhsdv lkjsdv ljkhsdddddddddd
- lkjsd lkjhsdclkj lksdv lkjshdc lkjs lkhsd kjhd kjhsd
- jkhsv kljhs jksd lkjs kjdsvdddddddddddddd
- lhdv kjdv kjsd lkjhsdv lkjshdvk kjhdv lkjsd
-sdlkvj ljhdv fvj hjsdc
-hjsdc jhsdc kjsd kjhqdc hdsc
-ljdsvsdb jsdv kljhdv jhsdv jdv ljdc jgdc jhdc hdc 
-sjhdv hsdvhjs
-jksd hjsdv jhsdsdjh kjsdv jvds kjsdv kjdv jsd 
-khjvdss kjsdv jdsv ljdsv
-lkjdsv lkjsdv ljdv ljdv jvs kjsd
-jhsg kjsdvc
+.TH man 2 "04 May 2015" "0.32" "holberton man page"
+.SH NAME
+.B holberton
+- become a full-stack software engineer.
+.SH SYNOPSIS
+holberton [STUDENTNAME]
+.SH DESCRIPTION
+Holberton School is a project-based alternative to college for the next generation of software engineers.
+.SH OPTIONS
+.B holberton
+does not take any options. However, you can supply studentname.
+.SH SEE ALSO
+.I peerlearning(2), projectbased(2), fullstack(2), Betty(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Julien Barbier, Sylvain Kalache, Sophie Barbier, Guillaume Salva, Kris Bredemeier, Julien Cyr, Alex Gautier and all the Holberton mentors
