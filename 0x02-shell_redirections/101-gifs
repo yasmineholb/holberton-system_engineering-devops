@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a| find -name  \*.gif |sed 's/\.gif$//'| xargs -n 1 basename | sort -fv
+find -name  \*.gif -type f |sed 's/\.gif$//'| xargs -n 1 basename | LC_All=C sort -f
