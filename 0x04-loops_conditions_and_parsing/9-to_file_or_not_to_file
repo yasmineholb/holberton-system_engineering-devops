@@ -5,7 +5,7 @@ if [ -e $"holbertonschool" ]; then
   if [ -s $"holbertonschool" ]
 then
      echo "File not empty"
-else
+  else
      echo "File empty"
   fi
   if [ -f $"holbertonschool" ]; then
