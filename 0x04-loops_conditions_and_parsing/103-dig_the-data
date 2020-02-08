@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#HTTP code script sort descending order
+awk '{print $1, $9}' apache-access.log | sort -n  | uniq -c "$1" | sort -gr
