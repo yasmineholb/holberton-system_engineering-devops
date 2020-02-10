@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # script that kills 7-highlander proces
 #trap exit SIGTERM
-kill SIGKILL "$(pgrep -f 7-highlander)"
+s=$(pgrep -f ./7-highlander)
+kill -9 "$s"
