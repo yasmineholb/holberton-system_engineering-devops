@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script that kills
+fuser -k 6-kill_me_now_made_easy
