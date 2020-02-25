@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This task is about ping
+ping -c 5 $@
