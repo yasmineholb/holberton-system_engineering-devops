@@ -8,8 +8,7 @@ def top_ten(subreddit):
 
     ur = requests.get("https://www.reddit.com/r/{}/hot.json?limit=10"
                       .format(subreddit),
-                      headers={"User-Agent": "My-User-Agent"},
-                      allow_redirects=False)
+                      headers={"User-Agent": "My-User-Agent"})
     if ur.status_code == 200:
         [print(t.get("data").get("title"))
          for t in ur.json().get("data").get("children")]
