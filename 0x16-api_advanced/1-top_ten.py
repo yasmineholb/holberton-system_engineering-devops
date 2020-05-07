@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """reddit api"""
+import requests
 
 
 def top_ten(subreddit):
     """prints the titles of the first 10 hot posts"""
-    import requests
-
     ur = requests.get("https://www.reddit.com/r/{}/hot.json?limit=10"
                       .format(subreddit),
                       headers={"User-Agent": "User-Agent"})
