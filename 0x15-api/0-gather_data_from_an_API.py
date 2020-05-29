@@ -1,17 +1,22 @@
 #!/usr/bin/python3
 """Python script that, for a given employee ID, returns information """
 import requests
-import sys
-if __name__ == '__main__':
-    emp_id = int(sys.argv[1])
-    u = "https://jsonplaceholder.typicode.com"
-    url = requests.get(u + "/users/{}".format(emp_id)).json()
-    td = requests.get(u + "/todos?userId={}".format(emp_id)).json()
-    num = []
-    for n in td:
-        if n.get('completed') is True:
-            num.append(n.get('title'))
-    print("Employee {} is done with tasks({}/{}):".
-          format(url.get('name'), len(num), len(td)))
-    for n in num:
-        print("\t {}".format(n))
+from sys import argv
+
+if __name__ == "__main__":
+    url = "https://jsonplaceholder.typicode.com"
+    emp = int(argv[1])
+    users = requests.get(url + "/users/{}".format(emp))
+    name = users.json().get('name')
+    t = requests.get(url + '/todos')
+    comp = 0
+    td = 0
+    for d in t.json():
+        if d.get('userId') == int(emp):
+            td += 1
+            if d.get('completed'):
+                comp += 1
+    print('Employee {} is done with tasks({}/{}):'
+          .format(name, comp, td))
+    print('\n'.join(["\t " + d.get('title') for d in t.json()
+          if d.get('userId') == emp and d.get('completed')]))
