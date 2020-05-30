@@ -15,5 +15,6 @@ if __name__ == "__main__":
                             quoting=csv.QUOTE_ALL,
                             lineterminator='\n')
         for t in td.json():
-            writer.writerow([userId, name, str(t.get('completed')),
-                            t.get('title')])
+            if t.get('userId') == userId:
+                writer.writerow([userId, name, str(t.get('completed')),
+                                t.get('title')])
