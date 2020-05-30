@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Python script that, for a given employee ID, returns information """
+import csv
 import requests
 import sys
 if __name__ == "__main__":
