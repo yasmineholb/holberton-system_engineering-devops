@@ -2,7 +2,6 @@
 """Python script that, for a given employee ID, returns information """
 import requests
 import sys
-import csv
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com"
     userId = int(sys.argv[1])
